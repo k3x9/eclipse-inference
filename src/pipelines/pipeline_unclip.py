@@ -12,7 +12,8 @@ from transformers.models.clip.modeling_clip import CLIPTextModelOutput
 
 from diffusers.models import UNet2DConditionModel, UNet2DModel
 from diffusers.schedulers import UnCLIPScheduler
-from diffusers.utils import logging, randn_tensor
+from diffusers.utils import logging
+from diffusers.utils.torch_utils import randn_tensor
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
 from diffusers.pipelines.unclip.text_proj import UnCLIPTextProjModel
 
